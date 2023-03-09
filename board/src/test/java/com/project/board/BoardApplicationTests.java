@@ -7,18 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 class BoardApplicationTests {
 
 	@Test
-	public void create() {
-	}
-
-	@Test
-	public void read() {
-	}
-
-	@Test
-	public void update() {
-	}
-
-	@Test
-	public void delete() {
+	void create() {
 	}
 }
