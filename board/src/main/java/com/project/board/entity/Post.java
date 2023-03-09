@@ -13,5 +13,6 @@ public class Post {
     private String postTitle;
     private String postContent;
     private String postedDate;
+    private int view;
     private boolean show;
 }

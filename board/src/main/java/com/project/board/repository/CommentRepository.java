@@ -10,7 +10,7 @@ public interface CommentRepository {
     /**
      * Create
      */
-    void createComment();
+    Long createComment();
 
     /**
      * Read
@@ -20,16 +20,11 @@ public interface CommentRepository {
     List<Comment> findByPostId(Long postId);
     Optional<Comment> findByCommentId(Long CommentId);
     List<Comment> findByCommentContent(String commentContent);
+    List<Comment> findByParentCommentId(Long parentCommentId);
     List<Comment> findAll();
-
-
-    /**
-     * Update
-     */
-
-
 
     /**
      * Delete
      */
+    void deleteComment();
 }
