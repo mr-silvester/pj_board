@@ -5,7 +5,7 @@ import com.project.board.entity.Comment;
 import java.util.List;
 import java.util.Optional;
 
-public class CommentMemoryRepository implements CommentRepository {
+public class CommentMemoryRepository implements CommentRepository, MemoryRepository {
     /**
      * Read
      */
@@ -54,6 +54,14 @@ public class CommentMemoryRepository implements CommentRepository {
      */
     @Override
     public void deleteComment() {
+
+    }
+
+    /**
+     * Clear
+     */
+    @Override
+    public void clearStore() {
 
     }
 }
