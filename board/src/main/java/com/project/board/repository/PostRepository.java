@@ -9,7 +9,7 @@ public interface PostRepository {
     /**
      * Create
      */
-    Long createPost();
+    Long createPost(Post post);
 
     /**
      * Read
@@ -25,11 +25,11 @@ public interface PostRepository {
     /**
      * Update
      */
-    void updatePost();
+    Post updatePost(Post post, Post updatedPost);
 
 
     /**
      * Delete
      */
-    void deletePost();
+    void deletePost(Post post);
 }

@@ -5,12 +5,12 @@ import com.project.board.entity.Post;
 import java.util.List;
 import java.util.Optional;
 
-public class PostMemoryRepository implements PostRepository {
+public class PostMemoryRepository implements PostRepository, MemoryRepository {
     /**
      * Read
      */
     @Override
-    public Long createPost() {
+    public Long createPost(Post post) {
         return null;
     }
 
@@ -48,15 +48,23 @@ public class PostMemoryRepository implements PostRepository {
      * Update
      */
     @Override
-    public void updatePost() {
-
+    public Post updatePost(Post post, Post updatedPost) {
+        return null;
     }
 
     /**
      * Delete
      */
     @Override
-    public void deletePost() {
+    public void deletePost(Post post) {
+
+    }
+
+    /**
+     * Clear
+     */
+    @Override
+    public void clearStore() {
 
     }
 }
